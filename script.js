@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             button.addEventListener("click", (event) => {
 
+                event.preventDefault();
                 event.stopPropagation();
 
                 card.classList.toggle("active");
