@@ -3,28 +3,12 @@
 
 <head>
 
-    <!-- =========================================================
-         BASIC DOCUMENT SETUP
-    ========================================================== -->
-
     <meta charset="UTF-8">
 
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
-
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="IE=edge"
-    >
-
-    <html lang="en-IN">
-
-
-    <!-- =========================================================
-         PRIMARY SEO
-    ========================================================== -->
 
     <title>
         HOVER Creative Studios | Creative & Digital Marketing Agency in Pune
@@ -45,20 +29,13 @@
         content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     >
 
-    <meta
-        name="googlebot"
-        content="index, follow"
-    >
-
     <link
         rel="canonical"
         href="https://hovercreativestudio.com/"
     >
 
 
-    <!-- =========================================================
-         OPEN GRAPH / SOCIAL SHARING
-    ========================================================== -->
+    <!-- Open Graph -->
 
     <meta
         property="og:type"
@@ -72,7 +49,7 @@
 
     <meta
         property="og:description"
-        content="Creative strategy, branding, content, digital marketing, graphic design and web experiences built to make brands impossible to overlook."
+        content="Creative strategy, branding, content, digital marketing, graphic design and web experiences by HOVER Creative Studios."
     >
 
     <meta
@@ -90,14 +67,9 @@
         content="en_IN"
     >
 
-    <!--
-        IMPORTANT:
-        Replace this with your actual 1200x630 social sharing image.
-    -->
-
     <meta
         property="og:image"
-        content="https://hovercreativestudio.com/hover/creative logo 2.png"
+        content="https://hovercreativestudio.com/assets/og-image.jpg"
     >
 
     <meta
@@ -105,20 +77,8 @@
         content="HOVER Creative Studios"
     >
 
-    <meta
-        property="og:image:width"
-        content="1200"
-    >
 
-    <meta
-        property="og:image:height"
-        content="630"
-    >
-
-
-    <!-- =========================================================
-         TWITTER / X
-    ========================================================== -->
+    <!-- Twitter / X -->
 
     <meta
         name="twitter:card"
@@ -137,47 +97,24 @@
 
     <meta
         name="twitter:image"
-        content="https://hovercreativestudio.com/hover/creative logo 2.png" 
+        content="https://hovercreativestudio.com/assets/og-image.jpg"
     >
 
 
-    <!-- =========================================================
-         THEME / BROWSER
-    ========================================================== -->
+    <!-- Browser -->
 
     <meta
         name="theme-color"
         content="#000000"
     >
 
-    <meta
-        name="color-scheme"
-        content="dark"
-    >
 
-
-    <!-- =========================================================
-         LANGUAGE
-    ========================================================== -->
+    <!-- Poppins -->
 
     <link
-        rel="alternate"
-        hreflang="en-in"
-        href="https://hovercreativestudio.com/"
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
     >
-
-    <link
-        rel="alternate"
-        hreflang="x-default"
-        href="https://hovercreativestudio.com/"
-    >
-
-
-    <!-- =========================================================
-         FONTS
-    ========================================================== -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link
         rel="preconnect"
@@ -191,89 +128,165 @@
     >
 
 
-    <!-- =========================================================
-         FAVICON
-    ========================================================== -->
+    <!-- Favicon -->
 
     <link
         rel="icon"
         type="image/png"
-        href="hover creative logo 2.png"
-    >
-
-    <link
-        rel="apple-touch-icon"
-        href="hover creative logo 2.png"
+        href="assets/favicon.png"
     >
 
 
-    <!-- =========================================================
-         STRUCTURED DATA — ORGANIZATION
-    ========================================================== -->
+    <!-- =====================================================
+         STRUCTURED DATA
+    ====================================================== -->
 
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
+      "@context": "https://schema.org",
+      "@graph": [
 
-        "@id": "https://hovercreativestudio.com/#organization",
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://hovercreativestudio.com/#business",
 
-        "name": "HOVER Creative Studios",
+          "name": "HOVER Creative Studios",
 
-        "url": "https://hovercreativestudio.com/",
+          "url": "https://hovercreativestudio.com/",
 
-        "logo": {
+          "description": "HOVER Creative Studios is a creative and digital marketing studio specializing in branding, social media, content creation, graphic design and web design.",
+
+          "logo": {
             "@type": "ImageObject",
-            "url": "https://hovercreativestudio.com/hover creative logo 2.png"
-        },
+            "url": "https://hovercreativestudio.com/assets/logo.png"
+          },
 
-        "description": "HOVER Creative Studios is a creative and digital marketing studio specializing in branding, social media, content creation, graphic design and web design.",
-
-        "areaServed": {
+          "areaServed": {
             "@type": "City",
             "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#brand-strategy",
+
+          "name": "Brand Strategy",
+
+          "serviceType": "Brand Strategy",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#digital-marketing",
+
+          "name": "Digital Marketing",
+
+          "serviceType": "Digital Marketing",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#social-media-marketing",
+
+          "name": "Social Media Marketing",
+
+          "serviceType": "Social Media Marketing",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#content-creation",
+
+          "name": "Content Creation",
+
+          "serviceType": "Content Creation",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#graphic-design",
+
+          "name": "Graphic Design",
+
+          "serviceType": "Graphic Design",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
+        },
+
+
+        {
+          "@type": "Service",
+          "@id": "https://hovercreativestudio.com/#web-design",
+
+          "name": "Web Design",
+
+          "serviceType": "Web Design",
+
+          "provider": {
+            "@id": "https://hovercreativestudio.com/#business"
+          },
+
+          "areaServed": {
+            "@type": "City",
+            "name": "Pune"
+          }
         }
+
+      ]
     }
     </script>
 
 
-    <!-- =========================================================
-         STRUCTURED DATA — LOCAL / PROFESSIONAL SERVICE
-    ========================================================== -->
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-
-        "@id": "https://hovercreativestudio.com/#service",
-
-        "name": "HOVER Creative Studios",
-
-        "url": "https://hovercreativestudio.com/",
-
-        "description": "Creative and digital marketing studio in Pune offering branding, social media marketing, content creation, graphic design and web design.",
-
-        "areaServed": {
-            "@type": "City",
-            "name": "Pune"
-        },
-
-        "serviceType": [
-            "Brand Strategy",
-            "Digital Marketing",
-            "Social Media Marketing",
-            "Content Creation",
-            "Graphic Design",
-            "Web Design"
-        ]
-    }
-    </script>
-
-
-    <!-- =========================================================
-         MAIN STYLESHEET
-    ========================================================== -->
+    <!-- Main CSS -->
 
     <link
         rel="stylesheet"
